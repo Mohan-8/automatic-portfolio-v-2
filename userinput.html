@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Automatic portfolio-User Input</title>
+    <link rel="icon" type="icon" href="assert/logo.ico" />
+  </head>
+  <body>
+    <div class="navbar">
+      <ul>
+        <li>
+          <a href="index.html">
+            <img
+              src="assert/n-logo.png"
+              alt="logo"
+              height="100px"
+              width="100px"
+            />
+          </a>
+        </li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="template.html">Templates</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="content">
+      <center>
+        <form id="resumeForm" action="/alert.html">
+          <label for="name">Name:<span>&#149;</span></label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            title="Full name &#13;Ex: Mohanakrishnan S "
+            placeholder="Ex: Mohanakrishnan S"
+            required
+          /><br /><br />
+          <label for="image">Image:<span>&#149;</span></label>
+          <input
+            type="file"
+            accept="image/png, image/gif, image/jpeg"
+            id="image"
+            name="image"
+            title="upload image &#13;ex: Profile.jpg, Profile.png"
+            required
+          /><br /><br />
+          <label for="headline">Headline:<span>&#149;</span></label>
+          <textarea
+            id="headline"
+            name="headline"
+            title="Profile Headline &#13;Ex: DEV, Full Stack Dev, MERN Stack "
+            placeholder="Ex: DEV, Full Stack Dev, MERN Stack"
+            required
+          ></textarea
+          ><br /><br />
+          <label for="LL">LinkedIn ID:<span>&#149;</span></label>
+          <input
+            type="text"
+            id="LL"
+            name="LL"
+            required
+            title="LinkedIn Profile Link &#13;Ex: mohanakrishnan-s-1591b2203 "
+            placeholder="Ex: mohanakrishnan-s-1591b2203"
+          /><br /><br />
+          <label for="aboutH">About:<span>&#149;</span></label>
+          <textarea
+            type="text"
+            id="about"
+            name="about"
+            required
+            title="Profile about &#13;Ex:Hey, I am Mohanakrishnan S.DEV, MERN Stack ...   &#13;I am working as a Freelancer for the past 1year... "
+            placeholder="Ex:Hey, I am Mohanakrishnan S.DEV, MERN Stack ...   &#13;I am working as a Freelancer for the past 1year..."
+          ></textarea>
+
+          <div id="skillEntries">
+            <h4>Professional Skills</h4>
+            <label for="skill1">Skill:<span>&#149;</span></label>
+            <input
+              type="text"
+              id="skill1"
+              name="skill1"
+              required
+              title="Enter SkillS &#13;Ex: Node &#13;Javascript"
+              placeholder="Ex: Node &#13;Javascript"
+            />
+            <label for="skillPercentage1">Percentage:</label>
+            <input
+              type="number"
+              id="skillPercentage1"
+              name="skillPercentage1"
+              required
+              title="Enter Percentage out of 100 &#13;Ex: 89"
+              placeholder="Ex: 89"
+            /><br /><br />
+          </div>
+          <button type="button" onclick="addSkill()">Add Skill</button
+          ><br /><br />
+          <div id="experienceEntries">
+            <div id="experience1">
+              <h4>Work experience</h4>
+              <label for="startDate1">Start Date:<span>&#149;</span></label>
+              <input
+                type="month"
+                id="startDate1"
+                name="startDate1"
+                required
+              /><br /><br />
+
+              <label for="endDate1">End Date:<span>&#149;</span></label>
+              <input
+                type="month"
+                id="endDate1"
+                name="endDate1"
+                required
+              /><br /><br />
+
+              <label for="company1">Company:<span>&#149;</span></label>
+              <input
+                type="text"
+                id="company1"
+                name="company1"
+                required
+                title="Enter company name &#13;Ex: TCS"
+                placeholder="Ex: KekranMakeran"
+              /><br /><br />
+
+              <label for="position1">Position:<span>&#149;</span></label>
+              <input
+                type="text"
+                id="position1"
+                name="position1"
+                required
+                title="Enter Role &#13;Ex: DEV, Sr.DEV, jr. DEV"
+                placeholder="Ex: DEV, Sr.DEV, jr. DEV"
+              /><br /><br />
+
+              <label for="description1">Description:<span>&#149;</span></label
+              ><br />
+              <textarea
+                id="description1"
+                name="description1"
+                rows="4"
+                cols="50"
+                required
+                title="Enter description &#13;Ex: About your Position, role"
+                placeholder="Ex: About your Position, role"
+              ></textarea
+              ><br /><br />
+            </div>
+          </div>
+          <br /><br />
+          <button type="button" onclick="addExperience()">Add Experience</button
+          ><br /><br />
+          <div id="educationEntries">
+            <div id="education1">
+              <h4>Education</h4>
+              <label for="eduStartDate1">Start Date:<span>&#149;</span></label>
+              <input
+                type="month"
+                id="eduStartDate1"
+                name="eduStartDate1"
+                required
+              />
+              <label for="eduEndDate1">End Date:<span>&#149;</span></label>
+              <input
+                type="month"
+                id="eduEndDate1"
+                name="eduEndDate1"
+                required
+              /><br /><br />
+              <label for="degree1">Degree:<span>&#149;</span></label>
+              <input
+                type="text"
+                id="degree1"
+                name="degree1"
+                required
+                title="Enter Education &#13;Ex: BSC.CS, XII, X"
+                placeholder="Ex: BSC.CS, XII, X"
+              /><br /><br />
+              <label for="institution1">Institution:<span>&#149;</span></label>
+              <input
+                type="text"
+                id="institution1"
+                name="institution1"
+                required
+                title="Enter Institution &#13;Ex:  Hindustan university, Bharath University"
+                placeholder="Ex: Hindustan university, Bharath University"
+              /><br /><br />
+
+              <label for="eduDescription1"
+                >Description:<span>&#149;</span></label
+              ><br />
+              <textarea
+                id="eduDescription1"
+                name="eduDescription1"
+                rows="4"
+                cols="50"
+                required
+                title="Enter Education &#13;Ex: BSC.CS"
+                placeholder="Ex: Completed my degree name in Where"
+              ></textarea
+              ><br /><br />
+            </div>
+          </div>
+          <button type="button" onclick="addEducation()">Add Education</button
+          ><br /><br />
+
+          <input type="submit" value="Generate" />
+        </form>
+      </center>
+    </div>
+  </body>
+</html>

@@ -2,49 +2,70 @@
   <head>
     <title>Automatic portfolio-Contact Us</title>
     <link rel="icon" type="icon" href="assert/img/logo.ico" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+ES+Deco:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Foldit:wght@100..900&family=Playwrite+ES+Deco:wght@100..400&family=Playwrite+IS:wght@100..400&family=Playwrite+US+Modern:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Foldit:wght@100..900&family=Playwrite+DE+Grund:wght@100..400&family=Playwrite+ES+Deco:wght@100..400&family=Playwrite+IS:wght@100..400&family=Playwrite+US+Modern:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="navbar">
-      <ul>
-        <li>
-          <a href="index.html">
-            <img
-              src="assert/img/n-logo.png"
-              alt="logo"
-              height="100px"
-              width="100px"
-            />
-          </a>
-        </li>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="template.html">Templates</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-      </ul>
-    </div>
-    <div class="content">
-      <center>
+    <div class="container">
+      <div class="navbar">
+        <ul>
+          <li>
+            <a href="index.html">
+              <img
+                src="assert/img/n-logo.png"
+                alt="logo"
+                height="100px"
+                width="100px"
+              />
+            </a>
+          </li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="template.html">Templates</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="content">
         <h1>Automatic portfolio</h1>
-      </center>
-      <form id="contact" action="/alert.html" method="post">
-        <h3>Contact Us</h3>
-        <fieldset>
-          <input type="text" name="name" placeholder="Name" /><br /><br />
-          <input type="email" name="email" placeholder="Email" /><br /><br />
-          <input type="text" name="subject" placeholder="Subject" /><br /><br />
-          <textarea
-            name="message"
-            placeholder="Message"
-            style="height: 100px"
-          ></textarea>
-        </fieldset>
-        <center>
-          <input type="submit" value="Send" />
-        </center>
-      </form>
+        <div class="cform">
+          <form id="contact" action="/alert.html" method="post">
+            <h3>Contact Us</h3>
+            <input type="text" name="name" placeholder="Name" /><br /><br />
+            <input type="email" name="email" placeholder="Email" /><br /><br />
+            <input
+              type="text"
+              name="subject"
+              placeholder="Subject"
+            /><br /><br />
+            <textarea
+              name="message"
+              placeholder="Message"
+              style="height: 100px"
+            ></textarea>
+            <input type="submit" value="Send" />
+          </form>
+        </div>
+      </div>
+      <footer>
+        Copyright © 2024 Designed and developed by INNOVATORS💡INFANTRY👣
+      </footer>
     </div>
-    <footer>
-      Copyright © 2024 Designed and developed by INNOVATORS💡INFANTRY👣
-    </footer>
   </body>
 </html>

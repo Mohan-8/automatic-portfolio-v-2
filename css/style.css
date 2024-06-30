@@ -81,7 +81,7 @@ body {
   width: 100%;
   margin-top: 20px;
 }
-.content input {
+.content input[type="submit"] {
   text-align: center;
   color: azure;
   background-color: #2a6fbc;
@@ -94,7 +94,7 @@ body {
   transition: all 0.3s ease-in;
 }
 
-.content input:hover {
+.content input[type="submit"]:hover {
   color: rgb(0, 0, 0);
   background-color: #1fbe27;
   font-weight: bold;
@@ -147,4 +147,82 @@ footer {
   font-style: normal;
   color: #2196f3;
   font-size: 20px;
+}
+.content #contact {
+  display: grid;
+  justify-items: center;
+  width: 30%;
+  border: 2px solid;
+  border-radius: 30px;
+}
+.content .cform {
+  display: flex;
+  justify-content: space-evenly;
+}
+.content .cform input[type="text"],
+input[type="email"],
+textarea {
+  border: 1px solid;
+  border-radius: 10px;
+  height: 25px;
+  width: 50%;
+}
+.box {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+}
+#resumeForm .box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#resumeForm label {
+  margin-bottom: 5px;
+}
+#resumeForm input,
+#resumeForm textarea {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 8px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+#resumeForm input[type="file"]::file-selector-button {
+  background-color: #2a6fbc;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#resumeForm button {
+  align-self: flex-start;
+  padding: 10px 20px;
+  background-color: #2a6fbc;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+#resumeForm button:hover {
+  background-color: #1fbe27;
+}
+.grid-2x2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.shadow-box {
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: #fff;
+}
+.hl {
+  border-top: 2px solid #ddd;
+  grid-column: span 2;
 }
